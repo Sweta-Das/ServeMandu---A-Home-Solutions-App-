@@ -11,6 +11,13 @@ class ServeMandu extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueGrey,
         elevation: 0.0,
+        actions: <Widget>[
+          IconButton(onPressed: () {},
+              icon: Icon(
+                Icons.account_circle_outlined,
+                color: Colors.white,
+              )),
+        ],
       ),
 
       drawer: Drawer(
@@ -34,9 +41,18 @@ class ServeMandu extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.app_registration,
+                Icons.location_on_sharp,
               ),
-              title: const Text('Registration'),
+              title: const Text('Location'),
+              onTap: (){
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.app_registration_rounded,
+              ),
+              title: const Text('Bookings'),
               onTap: (){
                 Navigator.pop(context);
               },
@@ -45,7 +61,7 @@ class ServeMandu extends StatelessWidget {
               leading: Icon(
                 Icons.login,
               ),
-              title: const Text('Login Page'),
+              title: const Text('Login/Register'),
               onTap: (){
                 Navigator.pop(context);
               },
@@ -64,6 +80,24 @@ class ServeMandu extends StatelessWidget {
                 Icons.calendar_month,
               ),
               title: const Text('Date & Time'),
+              onTap: (){
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.account_circle_outlined,
+              ),
+              title: const Text('Your Profile'),
+              onTap: (){
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.contact_support_outlined,
+              ),
+              title: const Text('Contact Us'),
               onTap: (){
                 Navigator.pop(context);
               },
@@ -133,8 +167,7 @@ class ServeMandu extends StatelessWidget {
                  ),
                ),
                ],),
-        ),
-
+        ), // background image
 
           SizedBox(height: 10.0),
           Padding(
@@ -147,19 +180,19 @@ class ServeMandu extends StatelessWidget {
                 ),
                 SizedBox(width: 40.0),
                 CircleAvatar(
-                  backgroundImage: AssetImage('assets/carpenter.png'),
+                  backgroundImage: AssetImage('assets/it.png'),
                   radius: 40.0,
                   backgroundColor: Colors.blueGrey,
                 ),
                 SizedBox(width: 40.0),
                 CircleAvatar(
-                  backgroundImage: AssetImage('assets/fridge.png'),
+                  backgroundImage: AssetImage('assets/homeclean.png'),
                   radius: 40.0,
                   backgroundColor: Colors.blueGrey,
                 ),
               ],
             ),
-          ),
+          ), // 1st row of services
 
           SizedBox(height: 10.0),
           Padding(
@@ -173,21 +206,21 @@ class ServeMandu extends StatelessWidget {
               ),
               SizedBox(width: 35.0),
               Text(
-                'Carpenter',
+                'IT Support',
                 style: TextStyle(
                   color: Colors.brown,
                 ),
               ),
-              SizedBox(width: 40.0),
+              SizedBox(width: 30.0),
               Text(
-                'Fridge Repair',
+                'Home Cleaning',
                 style: TextStyle(
                   color: Colors.brown,
                 ),
               ),
               SizedBox(width: 40.0),
             ],),
-          ),
+          ), // name of 1st row of services
 
           SizedBox(height: 20.0),
           Padding(
@@ -206,13 +239,13 @@ class ServeMandu extends StatelessWidget {
               ),
               SizedBox(width: 40.0),
               CircleAvatar(
-                backgroundImage: AssetImage('assets/homeclean.png'),
+                backgroundImage: AssetImage('assets/carpenter.png'),
                 radius: 40.0,
                 backgroundColor: Colors.blueGrey,
               ),
             ],
             ),
-          ),
+          ), // 2nd row of services
 
           SizedBox(height: 10.0),
           Padding(
@@ -224,25 +257,77 @@ class ServeMandu extends StatelessWidget {
                   color: Colors.brown,
                 ),
               ),
-              SizedBox(width: 55.0),
+              SizedBox(width: 60.0),
               Text(
                 'Plumber',
                 style: TextStyle(
                   color: Colors.brown,
                 ),
               ),
+              SizedBox(width: 60.0),
+              Text(
+                'Carpenter',
+                style: TextStyle(
+                  color: Colors.brown,
+                ),
+              ),
+            ],),
+          ), // name of 2nd row of services
+
+          SizedBox(width: 10.0),
+          Padding(
+            padding: EdgeInsets.fromLTRB(40.0, 30.0, 0.0, 0.0),
+            child: Row(children: <Widget>[
+              CircleAvatar(
+                backgroundImage: AssetImage('assets/tv (1).png'),
+                radius: 40.0,
+                backgroundColor: Colors.blueGrey,
+              ),
+              SizedBox(width: 40.0),
+              CircleAvatar(
+                backgroundImage: AssetImage('assets/ac.png'),
+                radius: 40.0,
+                backgroundColor: Colors.blueGrey,
+              ),
+              SizedBox(width: 40.0),
+              CircleAvatar(
+                backgroundImage: AssetImage('assets/fridge.png'),
+                radius: 40.0,
+                backgroundColor: Colors.blueGrey,
+              ),
+            ],
+            ),
+          ), // 3rd row of services
+
+          SizedBox(height: 10.0),
+          Padding(
+            padding: EdgeInsets.fromLTRB(40.0, 0.5, 0.0, 0.0),
+            child: Row(children: <Widget>[
+              Text(
+                'TV Repair',
+                style: TextStyle(
+                  color: Colors.brown,
+                ),
+              ),
+              SizedBox(width: 60.0),
+              Text(
+                'AC Repair',
+                style: TextStyle(
+                  color: Colors.brown,
+                ),
+              ),
               SizedBox(width: 40.0),
               Text(
-                'Home Cleaning',
+                'Fridge Repair',
                 style: TextStyle(
                   color: Colors.brown,
                 ),
               ),
               SizedBox(width: 40.0),
             ],),
-          ),
-          SizedBox(height: 20.0),
-             ], ),
+          ), // name of 3rd row of services
+
+        ], ),
       ), );
   }
 }
