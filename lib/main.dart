@@ -169,31 +169,62 @@ class ServeMandu extends StatelessWidget {
                ],),
         ), // background image
 
-          SizedBox(height: 10.0),
+          SizedBox(height: 60.0),
           Padding(
-            padding: EdgeInsets.fromLTRB(40.0, 40.0, 0.0, 0.0),
+            padding: EdgeInsets.all(0.0),
             child: Row(children: <Widget>[
-                CircleAvatar(
-                  backgroundImage: AssetImage('assets/beautysalon.png'),
-                  radius: 40.0,
-                  backgroundColor: Colors.blueGrey,
+              SizedBox(width: 40.0),
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
                 ),
-                SizedBox(width: 40.0),
-                CircleAvatar(
-                  backgroundImage: AssetImage('assets/it.png'),
-                  radius: 40.0,
-                  backgroundColor: Colors.blueGrey,
+                child: IconButton(
+                  splashRadius: 80,
+                  iconSize: 70,
+                  icon: Ink.image(
+                    image: AssetImage('assets/beautysalon.png'),
+                  ),
+                  onPressed: (){
+                    _navigateToBS(context);
+                  },
                 ),
-                SizedBox(width: 40.0),
-                CircleAvatar(
-                  backgroundImage: AssetImage('assets/homeclean.png'),
-                  radius: 40.0,
-                  backgroundColor: Colors.blueGrey,
+              ),
+              SizedBox(width: 40.0),
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
                 ),
+                child: IconButton(
+                splashRadius: 80,
+                iconSize: 70,
+                icon: Ink.image(
+                  image: AssetImage('assets/it.png'),
+                ),
+                onPressed: (){
+                },
+                ),
+              ),
+              SizedBox(width: 40.0),
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
+                ),
+                child: IconButton(
+                  splashRadius: 80,
+                  iconSize: 70,
+                  icon: Ink.image(
+                    image: AssetImage('assets/homeclean.png'),
+                  ),
+                  onPressed: (){
+                  },
+                ),
+              ),
               ],
             ),
           ), // 1st row of services
-
           SizedBox(height: 10.0),
           Padding(
             padding: EdgeInsets.fromLTRB(40.0, 0.5, 0.0, 0.0),
@@ -226,22 +257,52 @@ class ServeMandu extends StatelessWidget {
           Padding(
             padding: EdgeInsets.fromLTRB(40.0, 10.0, 0.0, 0.0),
             child: Row(children: <Widget>[
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/electrician.png'),
-                radius: 40.0,
-                backgroundColor: Colors.blueGrey,
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
+                ),
+                child: IconButton(
+                  splashRadius: 80,
+                  iconSize: 70,
+                  icon: Ink.image(
+                    image: AssetImage('assets/electrician.png'),
+                  ),
+                  onPressed: (){
+                  },
+                ),
               ),
               SizedBox(width: 40.0),
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/plumber.png'),
-                radius: 40.0,
-                backgroundColor: Colors.blueGrey,
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
+                ),
+                child: IconButton(
+                  splashRadius: 80,
+                  iconSize: 70,
+                  icon: Ink.image(
+                    image: AssetImage('assets/plumber.png'),
+                  ),
+                  onPressed: (){
+                  },
+                ),
               ),
               SizedBox(width: 40.0),
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/carpenter.png'),
-                radius: 40.0,
-                backgroundColor: Colors.blueGrey,
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
+                ),
+                child: IconButton(
+                  splashRadius: 80,
+                  iconSize: 70,
+                  icon: Ink.image(
+                    image: AssetImage('assets/carpenter.png'),
+                  ),
+                  onPressed: (){
+                  },
+                ),
               ),
             ],
             ),
@@ -257,7 +318,7 @@ class ServeMandu extends StatelessWidget {
                   color: Colors.brown,
                 ),
               ),
-              SizedBox(width: 60.0),
+              SizedBox(width: 65.0),
               Text(
                 'Plumber',
                 style: TextStyle(
@@ -274,26 +335,56 @@ class ServeMandu extends StatelessWidget {
             ],),
           ), // name of 2nd row of services
 
-          SizedBox(width: 10.0),
+          SizedBox(height: 10.0),
           Padding(
-            padding: EdgeInsets.fromLTRB(40.0, 30.0, 0.0, 0.0),
+            padding: EdgeInsets.fromLTRB(40.0, 20.0, 0.0, 0.0),
             child: Row(children: <Widget>[
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/tv (1).png'),
-                radius: 40.0,
-                backgroundColor: Colors.blueGrey,
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
+                ),
+                child: IconButton(
+                  splashRadius: 80,
+                  iconSize: 70,
+                  icon: Ink.image(
+                    image: AssetImage('assets/tvr.png'),
+                  ),
+                  onPressed: (){
+                  },
+                ),
               ),
               SizedBox(width: 40.0),
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/ac.png'),
-                radius: 40.0,
-                backgroundColor: Colors.blueGrey,
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
+                ),
+                child: IconButton(
+                  splashRadius: 80,
+                  iconSize: 70,
+                  icon: Ink.image(
+                    image: AssetImage('assets/ac.png'),
+                  ),
+                  onPressed: (){
+                  },
+                ),
               ),
               SizedBox(width: 40.0),
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/fridge.png'),
-                radius: 40.0,
-                backgroundColor: Colors.blueGrey,
+              Ink(
+                decoration: ShapeDecoration(
+                  shape: CircleBorder(),
+                  color: Colors.blueGrey,
+                ),
+                child: IconButton(
+                  splashRadius: 80,
+                  iconSize: 70,
+                  icon: Ink.image(
+                    image: AssetImage('assets/fridge.png'),
+                  ),
+                  onPressed: (){
+                  },
+                ),
               ),
             ],
             ),
@@ -303,13 +394,14 @@ class ServeMandu extends StatelessWidget {
           Padding(
             padding: EdgeInsets.fromLTRB(40.0, 0.5, 0.0, 0.0),
             child: Row(children: <Widget>[
+              SizedBox(width: 10.0),
               Text(
                 'TV Repair',
                 style: TextStyle(
                   color: Colors.brown,
                 ),
               ),
-              SizedBox(width: 60.0),
+              SizedBox(width: 55.0),
               Text(
                 'AC Repair',
                 style: TextStyle(
@@ -329,5 +421,53 @@ class ServeMandu extends StatelessWidget {
 
         ], ),
       ), );
+  }
+}
+
+void _navigateToBS(BuildContext context) {
+  Navigator.of(context).push(MaterialPageRoute(builder: (context) => BeautySalon()));
+}
+class BeautySalon extends StatelessWidget {
+  const BeautySalon({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar:AppBar(
+        title: Text('Beauty Salon'),
+        centerTitle: true,
+        backgroundColor: Colors.blueGrey,
+        elevation: 0.0,
+        actions: <Widget>[
+          IconButton(onPressed: () {},
+              icon: Icon(
+                Icons.account_circle_outlined,
+                color: Colors.white,
+              )),
+        ],
+      ),
+
+      body: Container(
+        padding: EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 0.0),
+        child: Column(children: <Widget>[
+        Container(
+        padding: EdgeInsets.fromLTRB(9.0, 40.0, 0.0, 0.0),
+        width: 400.0,
+        height: 200.0,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage("https://img.freepik.com/free-psd/top-view-beauty-salon-concept_23-2148600664.jpg?w=2000"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Column(children: <Widget>[
+
+          SizedBox(height: 10.0),
+        ],),
+      ),
+    ],
+    ),
+    ),
+    );
   }
 }
