@@ -450,24 +450,54 @@ class BeautySalon extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 0.0),
         child: Column(children: <Widget>[
-        Container(
-        padding: EdgeInsets.fromLTRB(9.0, 40.0, 0.0, 0.0),
-        width: 400.0,
-        height: 200.0,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: NetworkImage("https://img.freepik.com/free-psd/top-view-beauty-salon-concept_23-2148600664.jpg?w=2000"),
-            fit: BoxFit.cover,
+          Container(
+          padding: EdgeInsets.fromLTRB(9.0, 40.0, 0.0, 0.0),
+          width: 400.0,
+          height: 200.0,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage("https://img.freepik.com/free-psd/top-view-beauty-salon-concept_23-2148600664.jpg?w=2000"),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
-        child: Column(children: <Widget>[
 
-          SizedBox(height: 10.0),
-        ],),
-      ),
-    ],
+          SizedBox(height: 20),
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.blueGrey[300],
+              border: Border.all(color: Colors.blueGrey),
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  blurRadius: 5,
+                  //spreadRadius: 2,
+                  color: Colors.grey,
+                ),
+              ]),
+            margin: const EdgeInsets.all(5),
+            child: Material(
+              type: MaterialType.transparency,
+              child: InkWell(
+                onTap: () {},
+                splashColor: Colors.black26,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(80, 40, 70, 40),
+                    child: Column(
+                      children: [Image.network("https://femina.wwmindia.com/thumb/content/2021/jan/facials-thumb1611542403.jpg?width=1200&height=900"),
+                        Text('Facial', style: TextStyle(
+                        color: Colors.white,
+                         ),
+                      ),
+                    ],),
+                  ),
+                ),
+              ),
+            ),
+          ),
+      ],),
     ),
-    ),
-    );
+   );
   }
 }
