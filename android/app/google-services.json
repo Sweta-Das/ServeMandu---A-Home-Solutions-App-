@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "124229449263",
+    "project_id": "servemandu-d1c75",
+    "storage_bucket": "servemandu-d1c75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124229449263:android:4e6e03c9eb3cb8df3bf8da",
+        "android_client_info": {
+          "package_name": "com.example.servemandu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124229449263-3guhjlgfciv49uts3gesbtoh9bp2ils3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUnVGDwiAq2pJJkwiC1fFEbYwCisCgAuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124229449263-3guhjlgfciv49uts3gesbtoh9bp2ils3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
