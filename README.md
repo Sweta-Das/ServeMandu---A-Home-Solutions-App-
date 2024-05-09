@@ -3,7 +3,7 @@
 A Home Solutions App using Flutter.
 
 
-## Getting Started
+## About the App - Servemandu
 
 With the advancement of technology, people have become accustomed to new methods and
 techniques that makes our life easier. This project is an attempt to make household
@@ -20,13 +20,18 @@ selecting their preference, the user is required to provide their accurate addre
 date and time for the appointment. After the service has been provided, the users are asked to
 provide their feedback about the service. The payment is either in online/offline mode. Users
 can also view the sale and advertisement of the devices like TV, fridge & ACs when they
-book those services.
+book those services. <br>
+
+Check out the project below 👇:
+
+
+https://github.com/Sweta-Das/ServeMandu_A-Home-Solutions-App/assets/73231461/e8bac1ab-f93c-4f60-9584-e620431c2afe
+
 
 ## Contributors
 
-Vishakha Chaudhary (vi-sha-kha)
-
-Dipesh Sedhai (Dipesh2056)
+Vishakha Chaudhary -> [vi-sha-kha](https://github.com/vi-sha-kha) <br>
+Dipesh Sedhai -> [Dipesh2056](https://github.com/Dipesh2056/Dipesh2056)
 
 ## Reference
 For help getting started with Flutter development, view the
